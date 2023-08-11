@@ -157,10 +157,16 @@ a {
 /*Index-Main*/
 .hero {
   display: flex;
+  max-width: 1440px;
   justify-content: center;
   flex-shrink: 0;
+  margin: 0 auto;
   background-color: var(--nav-color);
   color: var(--nav-color);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(/images/people-office.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 188px 0;
 }
 
@@ -188,6 +194,8 @@ a {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--main-white-color);
+  margin: 0 auto;
+  margin-top: 48px;
 }
 
 .button-order:hover,
@@ -427,6 +435,15 @@ padding-bottom: 120px;
 }
 
 /* Section Our Benefits */
+
+.benefits-icons {
+  display: block;
+  background-color: var(--second-white-color);
+  border-radius: 4px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+
+}
 
 .visually-hidden {
   position: absolute;
