@@ -16,7 +16,6 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="portfolio" href="./portfolio.html" />
-    <script src="./js/modal.js"></script>
     <title>Main Page</title>
   </head>
   <body>
@@ -30,9 +29,9 @@
               >Web<span class="logo-studio">Studio</span></a
             >
           <ul class="link list nav-list">
-            <li><a class="link list-link" href="./index.html">Studio</a></li>
+            <li><a class="link list-link current" href="./index.html">Studio</a></li>
             <li>
-              <a class="link list-link" href="./portfolio.html">Portfolio</a>
+              <a class="link list-link current" href="./portfolio.html">Portfolio</a>
             </li>
             <li><a class="link list-link" href="">Contacts</a></li>
           </ul>
@@ -60,7 +59,8 @@
       <section class="hero">
         <div class="container">
           <h1 class="title">Effective Solutions for Your Business</h1>
-          <button class="button-order" type="button">Order Service</button>
+          <button class="button-order" type="button" data-modal-open>
+            Order Service</button>
         </div>
       </section>
 
@@ -319,24 +319,38 @@
         <div class="customers">
           <h2 class="title-customers">Customers</h2>
           <div class="companies">
-            <svg class=".companie-item" width="168" height="88">
+            <ul class="customers-list">
+              <li class="custom-list-item"> <a class="logo-companie" href="#">
+            <svg class=".logo-item" width="168" height="88">
               <use href="./images/sprite.svg#icon-client-1"></use>
-            </svg>
-            <svg class=".companie-item" width="168" height="88">
+            </svg></a>
+          </li>
+          <li class="custom-list-item"> <a class="logo-companie" href="#">
+            <svg class=".logo-item" width="168" height="88">
               <use href="./images/sprite.svg#icon-client-2"></use>
-            </svg>
-            <svg class=".companie-item" width="168" height="88">
+            </svg></a>
+          </li>
+          <li class="custom-list-item"> <a class="logo-companie" href="#">
+            <svg class=".logo-item" width="168" height="88">
               <use href="./images/sprite.svg#icon-client-3"></use>
-            </svg>
-            <svg class=".companie-item" width="168" height="88">
+            </svg></a>
+          </li>
+          <li class="custom-list-item"> <a class="logo-companie" href="#">
+            <svg class=".logo-item" width="168" height="88">
               <use href="./images/sprite.svg#icon-client-4"></use>
-            </svg>
-            <svg class=".companie-item" width="168" height="88">
+            </svg></a>
+          </li>
+          <li class="custom-list-item"> <a class="logo-companie" href="#">
+            <svg class=".logo-item" width="168" height="88">
               <use href="./images/sprite.svg#icon-client-5"></use>
-            </svg>
-            <svg class=".companie-item" width="168" height="88">
+            </svg></a>
+          </li>
+          <li class="custom-list-item"> <a class="logo-companie" href="#">
+            <svg class=".logo-item" width="168" height="88">
               <use href="./images/sprite.svg#icon-client-6"></use>
-            </svg>
+            </svg></a>
+          </li>
+          </ul>
           </div>
 
         </div>
@@ -357,5 +371,15 @@
         </p>
       </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop" data-modal>
+      <div class="modal"><button class="modal-button" type="button" data-modal-close>
+        <svg class="modal-button-icon" width="24" height="24">
+          <use href="./images/sprite.svg#icon-close-btn"></use>
+        </svg>
+      </button></div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
