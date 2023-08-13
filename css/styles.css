@@ -5,9 +5,9 @@
   --main-white-color: #fff;
   --second-white-color: #f4f4fd;
   --main-grey-color: #434455;
-  --lightslate: #8E8F99;
-  --dairy: #FCFCFC;
-  --cornflower: #E7E9FC;
+  --lightslate: #8e8f99;
+  --dairy: #fcfcfc;
+  --cornflower: #e7e9fc;
   --footer-social-hover: #31d0aa;
 }
 
@@ -44,7 +44,8 @@ p {
 }
 
 .header {
-box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .link-logo {
@@ -69,7 +70,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   margin: 0 auto;
   padding: 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .link .logo-studio {
@@ -81,7 +81,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
 
 .logo-footer {
   display: inline-block;
@@ -96,7 +95,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   padding-bottom: 18px;
 }
 
-
 /*Navigaor*/
 .header .nav {
   display: inline-flex;
@@ -104,14 +102,12 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   align-items: center;
   justify-content: center;
   gap: 40px;
-
 }
 
 .nav {
   position: relative;
   color: var(--link-hover-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 /* List */
@@ -163,8 +159,6 @@ a {
   border-radius: 2px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   flex-shrink: 0;
-
-
 }
 
 /* Link */
@@ -374,7 +368,6 @@ h2 {
   letter-spacing: 0.02em;
   color: var(--main-white-color);
   margin-bottom: 16px;
-
 }
 
 .footer-social-media-links {
@@ -398,13 +391,55 @@ h2 {
   background-color: var(--footer-social-hover);
 }
 
-
 /* Portfolio */
 
 .portfolio-nav {
   padding-top: 96px;
   padding-bottom: 120px;
 }
+
+.projects-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-img {
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+  background-color: var(--logo-button-color);
+  transition-property: transform;
+  transition-duration: 400ms;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+
+.features-item:hover .overlay {
+  transform: translateY(0);
+
+
+}
+
+.overlay-text {
+  color: var(--second-white-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 40px 32px;
+}
+
 
 /* Buttons links portfolio */
 .button-all {
@@ -433,6 +468,16 @@ h2 {
   border: 1px solid var(--cornflower, #e7e9fc);
   background: var(--second-white-color);
   padding: 12px 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .buttons {
@@ -441,6 +486,17 @@ h2 {
   align-items: center;
   gap: 24px;
   margin-bottom: 72px;
+}
+
+.portfolio-cards {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-cards:hover,
+.portfolio-cards:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* Buttons links portfolio Hover */
@@ -580,7 +636,6 @@ h2 {
   background-color: var(--second-white-color);
   border-radius: 4px;
   margin-bottom: 8px;
-
 }
 
 ul.list.benefits {
@@ -695,18 +750,16 @@ ul.list.team {
 .social-media-link {
   width: 40px;
   height: 40px;
-
 }
 
 .social-media-links {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px; 
+  gap: 24px;
   width: 100%;
   height: 100%;
   padding-top: 8px;
-  
 }
 
 .link-social {
@@ -725,12 +778,9 @@ ul.list.team {
   background-color: var(--link-hover-color);
 }
 
-
 .icon-social-media {
-  fill: #f4f4fd; 
+  fill: #f4f4fd;
 }
-
-
 
 /* Customers */
 
@@ -746,11 +796,9 @@ ul.list.team {
 }
 
 .customers {
-
   max-height: 440px;
   padding-top: 120px;
   padding-bottom: 120px;
-
 }
 
 .customers-list {
@@ -759,9 +807,7 @@ ul.list.team {
   justify-content: center;
   margin: 0 auto;
   gap: 24px;
-
 }
-
 
 .custom-list-item {
   display: flex;
@@ -780,21 +826,19 @@ ul.list.team {
   color: var(--lightslate);
   border: 1px solid var(--lightslate);
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-companie:hover,
 .logo-companie:focus {
   fill: var(--link-hover-color);
   border-color: var(--link-hover-color);
   color: var(--link-hover-color);
-
 }
 
 .logo-item {
   fill: currentColor;
 }
-
 
 /* Modal Window */
 
@@ -802,13 +846,12 @@ ul.list.team {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
 }
 
 .is-hidden {
-opacity: 0;
-visibility: hidden;
-pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .backdrop {
@@ -818,10 +861,10 @@ pointer-events: none;
   width: 100%;
   height: 100%;
 
-  background-color: rgba(46, 47, 66, 0.40);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .modal {
   position: absolute;
@@ -833,7 +876,8 @@ pointer-events: none;
   min-height: 584px;
   border-radius: 4px;
   background: var(--dairy);
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
 .modal-button {
   position: absolute;
@@ -850,25 +894,22 @@ pointer-events: none;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover,
-.modal-button:focus{
+.modal-button:focus {
   background-color: var(--link-hover-color);
   border: none;
   fill: #ffffff;
 }
-
 
 .modal-button-icon {
   width: 8px;
   height: 8px;
   flex-shrink: 0;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .modal-button-icon:hover {
