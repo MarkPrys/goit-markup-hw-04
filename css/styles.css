@@ -60,6 +60,10 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   margin-right: 76px;
 }
 
+.link.list-link.current {
+  color: #404bbf;
+}
+
 .link.link-logo {
   color: var(--link-hover-color);
   margin: 0 auto;
@@ -89,7 +93,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-bottom: 18px;s
+  padding-bottom: 18px;
 }
 
 
