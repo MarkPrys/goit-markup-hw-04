@@ -675,7 +675,7 @@ ul.list.team {
 
 /* Customers */
 
-.title-costumers {
+.title-customers {
   color: var(--nav-color);
   text-align: center;
   font-size: 36px;
@@ -698,7 +698,7 @@ ul.list.team {
 
 }
 
-.companies .customers-list   {
+.customers-list {
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -708,7 +708,7 @@ ul.list.team {
 }
 
 .customers-list {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
@@ -717,6 +717,7 @@ ul.list.team {
 }
 
 .custom-list-item {
+  display: flex;
   width: calc((100% - 120px) / 6);
   height: 88px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
