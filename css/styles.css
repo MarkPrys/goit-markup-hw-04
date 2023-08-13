@@ -213,7 +213,7 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office.jpeg);
+    url(../images/people-office.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
