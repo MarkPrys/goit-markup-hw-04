@@ -844,7 +844,7 @@ pointer-events: none;
 .modal-button:focus{
   background-color: var(--link-hover-color);
   border: none;
-
+  fill: #ffffff;
 }
 
 
