@@ -775,6 +775,7 @@ ul.list.team {
   align-items: center;
   justify-content: center;
   fill: var(--lightslate);
+  color: var(--lightslate);
   width: 100%;
   height: 100%;
   border: 1px solid var(--lightslate);
@@ -785,10 +786,12 @@ ul.list.team {
 .logo-companie:focus {
   fill: var(--link-hover-color);
   border-color: var(--link-hover-color);
+  color: var(--link-hover-color);
 
 }
 
 .logo-item {
+  fill: currentColor;
 }
 
 
