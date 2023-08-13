@@ -339,7 +339,7 @@ h2 {
   margin-bottom: 16px;
 }
 
-.foot .container {
+.foot {
   display: flex;
   align-items: baseline;
   margin-right: 120px;
