@@ -339,6 +339,10 @@ h2 {
   margin-bottom: 16px;
 }
 
+.foot-logo {
+  margin-right: 120px;
+}
+
 .foot {
   display: flex;
   align-items: baseline;
