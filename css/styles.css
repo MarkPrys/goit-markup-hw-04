@@ -678,7 +678,7 @@ ul.list.team {
 .title-costumers {
   color: var(--nav-color);
   text-align: center;
-  margin: 0 auto;
+  margin-bottom: 72px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
