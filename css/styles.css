@@ -424,13 +424,9 @@ h2 {
 
 .overlay-text {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-items: center;
   height: 100%;
   width: 100%;
-  padding: 40px 32px;
-
+  padding: 32px 40px;
 
   top: 0;
   left: 0;
