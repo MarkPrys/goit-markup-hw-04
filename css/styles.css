@@ -816,7 +816,8 @@ ul.list.team {
   height: 88px;
 }
 
-.logo-companie {
+
+.custom-list-item .logo-companie {
   display: flex;
   align-items: center;
   justify-content: center;
