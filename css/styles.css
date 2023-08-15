@@ -601,11 +601,7 @@ p.overlay-text {
 /* Section Our Benefits */
 
 .benefits-icons {
-  display: block;
-  background-color: var(--second-white-color);
-  border-radius: 4px;
-  padding: 24px 100px;
-  margin-bottom: 8px;
+
 }
 
 .visually-hidden {
@@ -700,7 +696,7 @@ ul.list.team {
   align-items: center;
   justify-content: center;
   background-color: var(--second-white-color);
-  height: 612px;
+  height: 780px;
   flex-shrink: 0;
   padding: 120px 0;
 }
