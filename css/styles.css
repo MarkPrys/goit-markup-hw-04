@@ -811,8 +811,6 @@ ul.list.team {
 }
 
 .custom-list-item {
-  margin: 0 auto;
-  padding: 0;
   display: flex;
   width: calc((100% - 120px) / 6);
   height: 88px;
