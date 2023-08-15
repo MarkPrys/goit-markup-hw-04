@@ -811,13 +811,15 @@ ul.list.team {
 }
 
 .custom-list-item {
+  margin: 0 auto;
+  padding: 0;
   display: flex;
   width: calc((100% - 120px) / 6);
   height: 88px;
 }
 
 
-.custom-list-item .logo-companie {
+.logo-companie {
   display: flex;
   align-items: center;
   justify-content: center;
