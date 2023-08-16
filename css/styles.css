@@ -335,9 +335,6 @@ h2 {
 }
 
 .footer {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   background-color: var(--nav-color);
   padding: 100px 0;
 }
@@ -351,15 +348,8 @@ h2 {
   margin-right: 120px;
 }
 
-.foot.container {
+.foot {
   display: flex;
-  align-items: baseline;
-  justify-content: center;
-  margin-right: 120px;
-  height: 100%;
-  width: 100%;
-  margin-left: 0;
-  padding-left: 200px;
 }
 
 .footer-text-social-media {
